@@ -11,7 +11,7 @@
 
 ### 更新数据库配置
 
-更新 config.yaml 里 mysql、redis 的配置信息
+使用 `vim seckill/config.yaml` 更新 mysql、redis 的配置信息（最好内网IP）
 
 ### 制作项目镜像
 

@@ -31,7 +31,7 @@ spec:
         app: seckill
     spec:
       containers:
-      - image: usoftglobal/seckill:latest
+      - image: usoftglobal/seckill:1.0.0
         name: seckill
         ports:
         - containerPort: 3000
