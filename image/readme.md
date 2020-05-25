@@ -1,11 +1,13 @@
-# 修改 Golang 数据库配置
+# 拉取秒杀项目代码
 
 ```
     cd k8s-seckill/image/src/github.com/usoftglobal
     git clone https://github.com/usoftglobal/seckill.git
-
-    # 更新 config.yaml 里 mysql、redis 的配置信息
 ```
+
+### 更新数据库配置
+
+更新 config.yaml 里 mysql、redis 的配置信息
 
 ### 制作新的镜像
 
