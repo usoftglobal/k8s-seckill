@@ -19,6 +19,11 @@
 ```
     cd k8s-seckill
 
+    # 修改部署
+    # image 改为你推送的远程地址如（registry.cn-shanghai.aliyuncs.com/usoftglobal/seckill:1.0.0）
+    # replicas 按照实际集群规模修改
+    vim seckill-deployment.yaml
+
     # 执行部署
     kubectl apply -f seckill-deployment.yaml
 

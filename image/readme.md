@@ -23,16 +23,16 @@
     docker images | grep seckill
 ```
 
-### 创建、推送到远程容器（可选，也可以直接配置本地的该镜像）
+### 创建、推送到远程容器
 
 ```
-    # 创建你自己的容器镜像，比如（hub.didiyun.com/usoftglobal/seckill）
+    # 创建你自己的容器镜像，比如（registry.cn-shanghai.aliyuncs.com/usoftglobal/seckill）
     # 登录远程容器账户
-    docker login --username=usoftglobal hub.didiyun.com
+    docker login --username=usoftglobal registry.cn-shanghai.aliyuncs.com
 
     # 标记镜像关联到远程
-    docker tag f335cd766090 hub.didiyun.com/usoftglobal/seckill:1.0.0
+    docker tag f335cd766090 registry.cn-shanghai.aliyuncs.com/usoftglobal/seckill:1.0.0
 
     # 推送 docker 镜像到远程
-    docker push hub.didiyun.com/usoftglobal/seckill:1.0.0
+    docker push registry.cn-shanghai.aliyuncs.com/usoftglobal/seckill:1.0.0
 ```
