@@ -3,17 +3,17 @@
 ## 如何使用？
 
 ```
-    git clone 当前项目
+    git clone https://github.com/usoftglobal/k8s-seckill.git
     cd k8s-seckill
 ```
 
 ### 部署 MySQL、Redis
 
-请按照 (database/readme.md)[./database/readme.md] 执行
+请按照 [./database/readme.md](database/readme.md) 执行
 
 ### 制作（更新）秒杀服务镜像
 
-请按照 (seckill/readme.md)[./image/readme.md] 执行
+请按照 [./image/readme.md](seckill/readme.md) 执行
 
 ### 部署秒杀集群
 
