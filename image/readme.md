@@ -1,4 +1,8 @@
-# 拉取秒杀项目代码
+# 制作秒杀服务镜像
+
+请在 kubernetes 主节点（非数据库服务器）执行
+
+### 拉取秒杀项目代码
 
 ```
     cd k8s-seckill/image/src/github.com/usoftglobal
@@ -9,7 +13,7 @@
 
 更新 config.yaml 里 mysql、redis 的配置信息
 
-### 制作新的镜像
+### 制作项目镜像
 
 ```
     cd k8s-seckill/image

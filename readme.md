@@ -11,7 +11,7 @@
 
 请按照 [./database/readme.md](database/readme.md) 执行
 
-### 制作（更新）秒杀服务镜像
+### 制作秒杀服务镜像
 
 请按照 [./image/readme.md](image/readme.md) 执行
 
