@@ -31,16 +31,8 @@ spec:
         app: seckill
     spec:
       containers:
-      - image: ./source-code
+      - image: usoftglobal/seckill:latest
         name: seckill
-        env:                                    # 应用程序需要的相关配置
-        - name: SECKILL_DB_HOST                 # SECKILL_DB_HOST 对应的值从 MySQL 的 Service 获取
-          value: seckill-mysql
-        - name: SECKILL_DB_PASSWORD             # 数据库密码和 MySQL 获取的方式一样
-          valueFrom:
-            secretKeyRef:
-              name: mysql-pass
-              key: password
         ports:
         - containerPort: 3000
           name: seckill

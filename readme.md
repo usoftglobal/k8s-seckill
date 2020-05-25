@@ -1,21 +1,28 @@
-# 使用 Kubernetes 部署 Golang 秒杀
+# 部署秒杀服务
 
-### 如何部署？
+## 如何使用？
 
 ```
-git clone 当前项目
+    git clone 当前项目
+    cd k8s-seckill
+```
 
-# clone 秒杀源码
-cd k8s-seckill/deployments/source-code/src/github.com/usoftglobal/
-git clone 秒杀项目源码
+### 部署 MySQL、Redis
 
-# 改改配置
+请按照 (database/readme.md)[./database/readme.md] 执行
 
-# 使用 kubernetes 部署
-cd k8s-seckill
-kubectl apply -f local-volumes.yaml
-kubectl applu -k deployments/kustomization.yaml
+### 制作（更新）秒杀服务镜像
 
-kubectl get pods
-...
+请按照 (seckill/readme.md)[./image/readme.md] 执行
+
+### 部署秒杀集群
+
+```
+    cd k8s-seckill
+
+    # 执行部署
+    kubectl applu -f seckill-deployment.yaml
+
+    kubectl get pods
+    ...
 ```

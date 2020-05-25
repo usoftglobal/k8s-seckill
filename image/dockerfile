@@ -1,8 +1,6 @@
-FROM golang:alpine
+FROM golang:1.14
 
 ENV CGO_ENABLED=0 \
-    GO111MODULE=on \
-    GOPROXY=https://goproxy.io \
     GOOS=linux \
     GOARCH=amd64
 
