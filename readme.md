@@ -1,6 +1,5 @@
 # 部署秒杀服务
 
-
 ## 1、部署 MySQL、Redis（数据库节点单独部署）
 
 请按照 [./database/readme.md](database/readme.md) 执行

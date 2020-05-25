@@ -25,6 +25,7 @@ spec:
       app: seckill
   strategy:             # 策略，默认 RollingUpdate，表示更新 Pod 的时候会以滚动更新的方式逐个更新 Pod
     type: Recreate      # Recreate 表示重建，更新 Pod 的时候会把所有正在运行的 Pod 杀掉，然后重建新的 Pod
+  replicas: 1
   template:
     metadata:
       labels:
