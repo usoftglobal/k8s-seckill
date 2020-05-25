@@ -13,7 +13,7 @@
 
 ### 制作（更新）秒杀服务镜像
 
-请按照 [./image/readme.md](seckill/readme.md) 执行
+请按照 [./image/readme.md](image/readme.md) 执行
 
 ### 部署秒杀集群
 
