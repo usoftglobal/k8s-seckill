@@ -1,0 +1,21 @@
+FROM golang:alpine
+
+ENV CGO_ENABLED=0 \
+    GO111MODULE=on \
+    GOPROXY=https://goproxy.io \
+    GOOS=linux \
+    GOARCH=amd64
+
+WORKDIR /go/src
+
+COPY ./src .
+
+WORKDIR /go/src/github.com/usoftglobal/seckill
+
+RUN go mod download
+
+RUN go build -o main .
+
+EXPOSE 3000
+
+CMD ["./main"]

@@ -1,0 +1,9 @@
+# 密码配置信息
+secretGenerator:
+- name: mysql-pass
+  literals:
+  - password=root
+resources:
+  - mysql-deployment.yaml
+  - redis-deployment.yaml
+  - seckill-deployment.yaml
