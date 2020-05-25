@@ -1,15 +1,16 @@
 # 部署秒杀服务
 
-## 如何使用？
+
+## 部署 MySQL、Redis（数据库节点单独部署）
+
+请按照 [./database/readme.md](database/readme.md) 执行
+
+## Kubernetes 集群节点部署
 
 ```
     git clone https://github.com/usoftglobal/k8s-seckill.git
     cd k8s-seckill
 ```
-
-### 部署 MySQL、Redis
-
-请按照 [./database/readme.md](database/readme.md) 执行
 
 ### 制作秒杀服务镜像
 

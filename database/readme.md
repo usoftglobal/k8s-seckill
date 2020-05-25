@@ -1,8 +1,10 @@
 ### 部署数据库（docker-compose）
 
-请在独立的服务器执行下面的命令使用 docker-compose 部署 mysql、redis
+执行下面的命令使用 docker-compose 部署 mysql、redis
 
 ```
+    git clone https://github.com/usoftglobal/k8s-seckill.git
+
     cd k8s-seckill/database
     docker-compose up -d --build
 
