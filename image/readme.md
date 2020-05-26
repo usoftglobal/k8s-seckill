@@ -28,7 +28,7 @@
 ```
     # 创建你自己的容器镜像，比如（registry.cn-shanghai.aliyuncs.com/usoftglobal/seckill）
     # 登录远程容器账户
-    docker login --username=usoftglobal registry.cn-shanghai.aliyuncs.com
+    docker login --username={你的用户名} registry.cn-shanghai.aliyuncs.com
 
     # 标记镜像关联到远程
     docker tag f335cd766090 registry.cn-shanghai.aliyuncs.com/usoftglobal/seckill:1.0.0
